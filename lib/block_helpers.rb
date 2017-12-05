@@ -61,8 +61,8 @@ module BlockHelpers
       body
     end
     
-    def respond_to?(method)
-      super or helper.respond_to?(method)
+    def respond_to?(method, include_all = false)
+      super or helper.respond_to?(method, include_all)
     end
 
     protected
